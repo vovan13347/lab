@@ -7,15 +7,18 @@
 ### *Инструкция по использованию*
 simpleapi-это Spring приложение написаное на JAVA, с добавленной БД postgres в виде docker образа.
 ---
-### *Windows 10*
+
 1.Загрузите проект из Github. Для клонирования репозитория необходимо выполнить команду:
 `git clone https://github.com/lsemenov/mylab1.git`
+
 2.Необходимо подготовить виртуальную среду для развёртывания БД . Установите [Docker Toolbox](https://github.com/docker/toolbox/releases), 
 3.Установите postgresql  (локально или на удаленном сервере). Чтобы установить PostgreSQL образ, вы можете выполнить следующую команду в Docker Quickstart Terminal:
 `docker pull postgres`
 4.Подготовка базы данных для добавления к Spring-приложению. Чтобы запустить Postgres Docker-контейнер, необходимо выполнить следующие команды в Docker Quickstart Terminal:
 ` docker run -e POSTGRES_PASSWORD=root -p 5432:5432`
+
 5.Добавляем базу данных (БД) в Spring приложение. Зайдите в репозиторий с проектом `...\src\main\resources`. Заполните следующие поля в файле `...\src\main\resources..application.properties`.
+
 Настройки БД для Postgres:
 `spring.datasource.username=postgres
 spring.datasource.password=root
