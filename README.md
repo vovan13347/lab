@@ -11,25 +11,24 @@
 1.Загрузите проект из Github. Для клонирования репозитория необходимо выполнить команду:
 `git clone https://github.com/vovan13347/lab.git`
 
-2.Необходимо подготовить виртуальную среду для развёртывания БД . Установите [Docker Toolbox](https://github.com/docker/toolbox/releases), 
+2.Необходимо встроить базу данных виртуальную среду . Установите [Docker Desktop](https://www.docker.com/products/docker-desktop), 
 
-3.Установите postgresql  (локально или на удаленном сервере). Чтобы установить PostgreSQL образ, вы можете выполнить следующую команду в Docker Quickstart Terminal:
-`docker pull postgres`
+3.Установите postgresql используя приложение  IntelliJ IDEA 2020.2.3 (Ultimate Edition)
 
-4.Подготовка базы данных для добавления к Spring-приложению. Чтобы запустить Postgres Docker-контейнер, необходимо выполнить следующие команды в Docker Quickstart Terminal:
-` docker run -e POSTGRES_PASSWORD=root -p 5432:5432`
+4.  Запустить Postgres Docker-контейнер,команду:`docker-compose.yml`
 
 5.Добавляем базу данных (БД) в Spring приложение. Зайдите в репозиторий с проектом `...\src\main\resources`. Заполните следующие поля в файле `...\src\main\resources..application.properties`.
 
 Настройки БД для Postgres:
-`spring.datasource.username=postgres
+`spring.datasource.username=root
 spring.datasource.password=root
-spring.datasource.url=jdbc:postgresql://XXX.XXX.XX.XX:5432/postgres`
+spring.datasource.url=jdbc:postgresql://localhost:5432/myshopdb`
 
-где, XXX.XXX.XXX.XXX:5432 -IP адрес виртуальной машины Docker
-Чтобы узнать IP виртуальной машины Docker, необходимо в Docker Terminal выполнить следующую команду:
-`docker-machine ip default`
+где, localhost:5432myshopdb -IP адрес,базы данных
+
+
 После настройки БД, необходимо пересобрать приложение, используя для этого [maven](https://maven.apache.org/download.cgi). 
+
 6.Для сборки приложения из командной строки с помощью maven, необходимо выполнить следующую команду из корневой директории проекта:
 `mvn package -Dmaven.test.skip=true`
   
@@ -45,6 +44,7 @@ spring.datasource.url=jdbc:postgresql://XXX.XXX.XX.XX:5432/postgres`
   
 7.Создаем образ Docker для того, чтобы запустить приложения в контейнере. Чтобы создать образ, необходимо выполнить следующую команду из директории проекта:
 `docker buil . -t <ImageName>`
+
 8.В терминале Docker запускаем контейнер с нашим приложением следующей командой:
 `docker run -p 8080:8080 <ImageName>`
   
@@ -55,16 +55,23 @@ spring.datasource.url=jdbc:postgresql://XXX.XXX.XX.XX:5432/postgres`
   ---
 ### *Примеры CURL запросов:*
 Где,  XXX.XXX.XXX.XXX:8080 -  IP и порт виртуальной машины  docker на которой работает приложение.
+
 1. Получить список топ 10 пользователей Kaggle:
 `curl  http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle`
+
 В ответ будет получен JSON ответ с информацией о всех пользователях которые имеются в БД.
+
 2. Получить информацию о пользователе по id:
+
 `curl  http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle/{id} `
 В ответ будет получен JSON ответ с информацией о пользователе.
+
 3. Добавить запись о пользователе:
+
 Формат: `{rank: "string", department: "string ",room: integer, callnumber: integer}`
 `curl -d "{"rank": 53, "tier": "Expert", "username": "icecuber", "points":52396}" http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle -H "Content-Type:application/json"`
 4. Удалить запись о пользователе:
+
 Формат: `{rank: "string", department: "string ",room: integer, callnumber: integer}`
 `curl -i -X DELETE http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle/del/{id}`
 
