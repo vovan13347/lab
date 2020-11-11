@@ -12,8 +12,10 @@ simpleapi-это Spring приложение написаное на JAVA, с д
 `git clone https://github.com/lsemenov/mylab1.git`
 
 2.Необходимо подготовить виртуальную среду для развёртывания БД . Установите [Docker Toolbox](https://github.com/docker/toolbox/releases), 
+
 3.Установите postgresql  (локально или на удаленном сервере). Чтобы установить PostgreSQL образ, вы можете выполнить следующую команду в Docker Quickstart Terminal:
 `docker pull postgres`
+
 4.Подготовка базы данных для добавления к Spring-приложению. Чтобы запустить Postgres Docker-контейнер, необходимо выполнить следующие команды в Docker Quickstart Terminal:
 ` docker run -e POSTGRES_PASSWORD=root -p 5432:5432`
 
