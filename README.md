@@ -15,7 +15,7 @@
 
 3.Установите postgresql используя приложение  IntelliJ IDEA 2020.2.3 (Ultimate Edition)
 
-4.  Запустить Postgres Docker-контейнер,команду:`docker-compose.yml`
+4.Запустить Postgres Docker-контейнер,команду:`docker-compose up`
 
 5.Добавляем базу данных (БД) в Spring приложение. Зайдите в репозиторий с проектом `...\src\main\resources`. Заполните следующие поля в файле `...\src\main\resources..application.properties`.
 
