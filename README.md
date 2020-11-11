@@ -9,7 +9,7 @@
 ---
 
 1.Загрузите проект из Github. Для клонирования репозитория необходимо выполнить команду:
-`git clone https://github.com/lsemenov/mylab1.git`
+`git clone https://github.com/vovan13347/lab.git`
 
 2.Необходимо подготовить виртуальную среду для развёртывания БД . Установите [Docker Toolbox](https://github.com/docker/toolbox/releases), 
 
