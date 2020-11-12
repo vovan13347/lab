@@ -11,9 +11,9 @@
 1.Загрузите проект из Github. Для клонирования репозитория необходимо выполнить команду:
 `git clone https://github.com/vovan13347/lab.git`
 
-2.Необходимо встроить базу данных виртуальную среду . Установите [Docker Desktop](https://www.docker.com/products/docker-desktop), 
+2.Необходимо встроить базу данных виртуальную среду . Установите [Docker Desktop](https://www.docker.com/products/docker-desktop) и зпустите его
 
-3.Установите postgresql используя приложение  IntelliJ IDEA 2020.2.3 (Ultimate Edition)
+3.Установите postgresql используя приложение  [IntelliJ IDEA 2020.2.3 (Ultimate Edition)](https://www.jetbrains.com/idea/download/#section=windows)
 
 4.Запустить Postgres Docker-контейнер,команду:`docker-compose up`
 
@@ -24,8 +24,10 @@
 spring.datasource.password=root
 spring.datasource.url=jdbc:postgresql://localhost:5432/myshopdb`
 
-где, localhost:5432myshopdb -IP адрес,базы данных
+где, localhost:5432myshopdb -IP адрес,базы данных.
 
+
+Для запуска прилодения используете файл `MyshopApplication`
 
 После настройки БД, необходимо пересобрать приложение, используя для этого [maven](https://maven.apache.org/download.cgi). 
 
