@@ -11,7 +11,7 @@
 1.Загрузите проект из Github. Для клонирования репозитория необходимо выполнить команду:
 `git clone https://github.com/vovan13347/lab.git`
 
-2.Необходимо встроить базу данных виртуальную среду . Установите [Docker Desktop](https://www.docker.com/products/docker-desktop) и зпустите его
+2.Необходимо встроить базу данных виртуальную среду . Установите [Docker Desktop](https://www.docker.com/products/docker-desktop) и запустите его
 
 3.Установите postgresql используя приложение  [IntelliJ IDEA 2020.2.3 (Ultimate Edition)](https://www.jetbrains.com/idea/download/#section=windows)
 
