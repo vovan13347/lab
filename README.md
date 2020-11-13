@@ -43,16 +43,18 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/myshopdb`
   
   ---
 ### *Примеры CURL запросов:*
-Где,  XXX.XXX.XXX.XXX:8080 -  IP и порт виртуальной машины  docker на которой работает приложение.
 
-1. Получить список топ 10 пользователей Kaggle:
-`curl  http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle`
+
+1. Получить список всех  пользователей:
+`curl localhost:8080/api/myshop/users`
+список товаров:
+`curl localhost:8080/api/myshop/goods`
 
 В ответ будет получен JSON ответ с информацией о всех пользователях которые имеются в БД.
 
-2. Получить информацию о пользователе по id:
+2. поиск по id пользователя:
 
-`curl  http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle/{id} `
+` curl localhost:8080/api/myshop/users/{id} `
 В ответ будет получен JSON ответ с информацией о пользователе.
 
 3. Добавить запись о пользователе:
