@@ -32,7 +32,7 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/myshopdb`
 После настройки БД, необходимо пересобрать приложение, используя для этого [maven](https://maven.apache.org/download.cgi). 
 
 6.Для сборки приложения из командной строки с помощью maven, необходимо выполнить следующую команду из корневой директории проекта:
-`mvn package -Dmaven.test.skip=true`
+`mvn clean package spring-boot:repackage`
   
   
   
