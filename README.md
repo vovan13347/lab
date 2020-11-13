@@ -63,5 +63,5 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/myshopdb`
 
 
 5. Получит значение hostname:
-`имя хоста curl localhost:8080/api/myshop/hostname` 
+` curl localhost:8080/api/myshop/hostname` 
 В ответ будет получен JSON в виде {hostname: "hostname"}.
