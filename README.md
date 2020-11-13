@@ -47,31 +47,21 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/myshopdb`
 
 1. Получить список всех  пользователей:
 `curl localhost:8080/api/myshop/users`
-список товаров:
+2.список товаров:
 `curl localhost:8080/api/myshop/goods`
 
 В ответ будет получен JSON ответ с информацией о всех пользователях которые имеются в БД.
 
-2. поиск по id пользователя:
+3. поиск по id пользователя:
 
 ` curl localhost:8080/api/myshop/users/{id} `
 В ответ будет получен JSON ответ с информацией о пользователе.
 
-3. Добавить запись о пользователе:
-
-Формат: `{rank: "string", department: "string ",room: integer, callnumber: integer}`
-`curl -d "{"rank": 53, "tier": "Expert", "username": "icecuber", "points":52396}" http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle -H "Content-Type:application/json"`
-4. Удалить запись о пользователе:
-
-Формат: `{rank: "string", department: "string ",room: integer, callnumber: integer}`
-`curl -i -X DELETE http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle/del/{id}`
-
-
-
-В ответ будет получен статус 204 No Content.
+4.поиск по номеру id товара 
+`curl localhost:8080/api/myshop/goods/{id}`
 
 
 
 5. Получит значение hostname:
-`curl  http://XXX.XXX.XXX.XXX:8080/api/v1/status` 
+`имя хоста curl localhost:8080/api/myshop/hostname` 
 В ответ будет получен JSON в виде {hostname: "hostname"}.
