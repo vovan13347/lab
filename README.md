@@ -35,15 +35,6 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/myshopdb`
 `mvn clean package spring-boot:repackage`
   
   
-  
-  Создастся JAR-файл в директории проекта `.../target/XXX-1.0.jar`. Необходимо в Dockerfile заменить строчки для пересобранного проекта:
-  
-  
-  
-`COPY /target/simpleapi-1.0.jar XXX-1.0.JAR`
-`ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/XXX-1.0.jar"]`
-где, XXX-1.0.jar -ваш пересобранный проект (simpleapi-1.0.jar)
-  
 7.Создаем образ Docker для того, чтобы запустить приложения в контейнере. Чтобы создать образ, необходимо выполнить следующую команду из директории проекта:
 `docker buil . -t <ImageName>`
 
