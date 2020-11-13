@@ -19,9 +19,6 @@
 4.В терминале Docker строим контейнер с нашим приложением  и запускаем  следующей командой:
 `docker-compose up --build`, а чтобы остановить  используете команду `docker-compose down`
 
-5.Запустить Postgres Docker-контейнер,команду:`docker-compose up --build`
-
-6. Чтобы остановить  используете команду `docker-compose down`
 
   
   
