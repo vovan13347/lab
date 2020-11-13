@@ -36,7 +36,7 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/myshopdb`
 
 
 7.В терминале Docker строим контейнер с нашим приложением  и запускаем  следующей командой:
-`docker-compose up --build`, а чтобы остановить  используете команду `docker-compose down' 
+`docker-compose up --build`, а чтобы остановить  используете команду `docker-compose down`
 
   
   
