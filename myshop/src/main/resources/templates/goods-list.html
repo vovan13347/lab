@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>goods</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+<div th:switch="${goods}">
+    <h2 th:case="null">No goods found!</h2>
+    <div th:case="*">
+        <h2>goods</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="goods : ${goods}">
+                <td th:text="${goods.id}"></td>
+                <td th:text="${goods.name}"></td>
+                <td th:text="${goods.price}"></td>
+                <td><a th:href="@{goods-update/{id}(id=${goods.id})}">Edit</a></td>
+                <td><a th:href="@{goods-delete/{id}(id=${goods.id})}">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/goods-create">Create goods</a></p>
+    <p><a href="/">Return</a></p>
+</div>
+</body>
+</html>

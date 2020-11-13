@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<title>Create goods</title>
+</head>
+<body>
+<form action="#" th:action="@{/goods-update}" th:object="${goods}" method="post">
+    <label for="id">ID</label>
+    <input readonly type="number" th:field="*{id}" id="id" placeholder="ID">
+    <br/>
+    <label for="name">Name</label>
+    <input type="text" th:field="*{name}" id="name" placeholder="Name">
+    <br/>
+    <label for="price">Price</label>
+    <input type="number" th:field="*{price}" id="price" placeholder="Price">
+    <br/>
+    <input type="submit" value="Update Goods">
+</form>
+</body>
+</html>

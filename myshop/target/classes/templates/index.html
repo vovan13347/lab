@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>My shop</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+<a href="/goods">Goods</a><br/>
+<a href="/users">Users</a><br/>
+<a href="/orders">Orders</a><br/>
+<table>
+    <tr>
+        <td>Host name</td>
+        <td>[[${localHostName}]]</td>
+    </tr>
+    <tr>
+        <td>UUID</td>
+        <td>[[${UUID}]]</td>
+    </tr>
+    <tr>
+        <td>IP</td>
+        <td>[[${ip}]]</td>
+    </tr>
+    <tr>
+        <td>Server port</td>
+        <td>[[${serverPort}]]</td>
+    </tr>
+</table>
+</body>
+</html>

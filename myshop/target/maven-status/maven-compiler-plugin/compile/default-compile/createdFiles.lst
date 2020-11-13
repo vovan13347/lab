@@ -1,0 +1,14 @@
+com\example\myshop\utils\HostValueGetter.class
+com\example\myshop\controller\MyController.class
+com\example\myshop\model\Order.class
+com\example\myshop\model\User.class
+com\example\myshop\controller\AddController.class
+com\example\myshop\service\OrderService.class
+com\example\myshop\MyshopApplication.class
+com\example\myshop\service\GoodsService.class
+com\example\myshop\model\Goods.class
+com\example\myshop\dao\UserDao.class
+com\example\myshop\dao\GoodsDao.class
+com\example\myshop\service\UserService.class
+com\example\myshop\dao\OrderDao.class
+com\example\myshop\utils\HibernateSessionFactoryUtil.class
