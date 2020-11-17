@@ -74,7 +74,7 @@ spec:
 
    `kubectl get pods`
     
- [Скриншты вывода команды консоли](https://github.com/lsemenov/mylab/blob/master/kuberlab/kubectl_get_pods.jpg)
+ [Скриншты вывода команды консоли](https://github.com/vovan13347/lab/tree/main/kuberneteslab/podslist.jpg)
 
 ## Осмотр подов в графическом интерфейсе:
 
