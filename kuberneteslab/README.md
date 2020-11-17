@@ -78,7 +78,7 @@ spec:
 
 ## Осмотр подов в графическом интерфейсе:
 
-[Скриншоты графического интерфейса с подами](https://github.com/lsemenov/mylab/blob/master/kuberlab/dashboard.jpg)
+[Скриншоты графического интерфейса с подами](https://github.com/vovan13347/lab/tree/main/kuberneteslab/podslistgraph.jpg)
 
 ## Обращаюсь к ендпоинту, где отображается hostname:
 
