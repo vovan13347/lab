@@ -57,15 +57,16 @@ spec:
         app: myspring
     spec:
       containers:
-        - image: vova13347/myspring
+        - image: andreas111/myspring
           imagePullPolicy: Never
           name: myspring
           ports:
             - containerPort: 8080
       hostAliases:
-        - ip: "127.0.0.1" # The IP of localhost from MiniKube
+        - ip: "192.168.49.2" # The IP of localhost from MiniKube
           hostnames:
           - postgres.local
+
    
           
 ```
