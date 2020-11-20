@@ -73,7 +73,7 @@ spec:
 
 ## Проверить  количество подов можно с помощью команды:
 
-   `kubectl get pods`
+   `kubectl get po`
     
  [Скриншты вывода команды консоли](https://github.com/vovan13347/lab/tree/main/kuberneteslab/pods.jpg)
 
