@@ -82,9 +82,7 @@ spec:
 [Скриншоты графического интерфейса с подами](https://github.com/vovan13347/lab/tree/main/kuberneteslab/podslistgraph.jpg)
 
 
-## Обращаюсь к ендпоинту, где отображается hostname:
 
-https://192.168.49.2:31317/api/v1/status
 
 
 
