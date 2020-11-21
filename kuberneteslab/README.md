@@ -81,7 +81,7 @@ spec:
 
 [Скриншот графического интерфейса с подами](https://github.com/vovan13347/lab/tree/main/kuberneteslab/podslistgraph.jpg)
 
-[Видеокомментарии с обзором кластера ](https://www.youtube.com/watch?v=QvbB9jNc8_E)
+[Видео с обзором кластера ](https://github.com/vovan13347/lab/blob/main/kuberneteslab/kubernetes.mp4)
 
 
 
