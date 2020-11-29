@@ -59,3 +59,5 @@
 ### *Ссылка на развернутое приложение на платформе Heroku:*
 
 <https://vova-shop.herokuapp.com>
+
+[![Build Status](https://travis-ci.com/vovan13347/lab.svg?branch=main)](https://travis-ci.com/vovan13347/lab)

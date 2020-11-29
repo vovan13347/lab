@@ -6,7 +6,7 @@
       - docker
     env:
       global:
-        - secure: "M78Gbnw5QbqGUfBI/niHLk4zCcIXdiEKw9PJWAnv9sizdroZJb3ysaxlLKySljCtLUR6TbqH3qjYbwJ+WNNHzThQsWBQbwEApajWDu4Fx77CvYNdYMP+1lpSKdxsR3JFoTYh3FnLOMF9FEoAGWlFTSu8fOFhCWtYOItXo4qlHeMBzb1mERQQQdKMKcR16dj2ru49186OBfwBvd18Tstc1YtcMKIXVvonaHs6asRjF+dRQMW6+qXHcFqFoEHxi8FCC9WaQqbwrd7IS/kYY62eR3y5ms5ybWzR/1iByIxELNVoYQFPl/rn53iwflULWPlN9IkgKWCoGF6YIH94s7XxX/sLb4N+xd5T8Msm0APioedh1Ds2RY9cYwx4iyYMHfyGQ/ychazcO9yaRLsSTyc6bCD3DtOKgUfZa2m1WPdAAJ8qQ6ePJABKiQEChuahJiy+dr92LKWyPkyyaEDQQkIRjKGAs/vNaU3WKEJZHg0TPRf+9LhcHQG5DmD8kYtuB6Ae8zjZKojhoZkWwyggHKbUw0vXQGybUHO9rl2u9Wq30r3h/fP5A4Ih8pb7g3nnuFhGJsafaXh7W880uyjvojQZV8HfSeP95d/e/VlIsQqABlR5jMrOtjFijYo6gqnDgTTlHjuYQFsa66p2gD2pQzM3G427Cf4y+oqIwtdhN6SnLVU="
+        - secure: "HDzurV/LoCCYRDCQ6LZ86S0lLsS2f4pSR0fXTX39NVdgv7y9O7gBkgjzthMony2h33q6ztlg6AW/oxjaeq2H+DL2EcvcCGde9ko67oPMXSN0QZrRWH5evMJ7TYTbtO3wfJDZlmxaYk0SdAprzZSE5foc+M1BLATH3XaLvSbQfwkHISQ/BZos36vkNYkG27YT4G6duF/wQ4c5ZVMd8iQ1uq4T9V4/h7TbYuu4R8BDRZKQt5vFA0jqPX+LcZJxRNItsGrt0ERQ324Spb1r9b8dkC0SPK5I6Dtgb2IUk35mgEdBvUS5UzHBm/Osq+40EOqCZ+4w9GFFmGhhJD/wnVZIIgOIucY7C+HJkKsQpcRjPTWbtJGCbjhK40+x9oTGKItayobXsjx98GldwjD2qJjvoqySsUjaE4tL9A0eOPDcl29OpKymzxtchxFcbwaLbi0tghRZlNkcLJz+UZ32hKisT2MvDRNPlMSQ15YJKy1JxFoD8oyFRlFINBce38YRYK8PXBFCTzGZdzmsp+rh0V9gwn8w5GkFQ68/46ZDJr+S6bU2wdgxRSJWeoQFOSGILnmy1pySDHpoHRD+dx0miaUSj3LmraChLpiW2dxEhGtZN6v9LB1XFyfFwKk0cUqFUoQNCQDiDBc1YuixddgWWYBBTW3YvoUPqKIIv9RHBuvG2Fo="
         - secure: "UOWkgWofsgXMgvPHapwjtXoyZEH/lhv9TVB9q8uLH6sgkle6IUwGi6So/v1M+QmRwOlSBHpr5jB57kUw3xfZ+zgYjcfaNtqZS93KY8PlT2YJ6SLaHO8tuUFWzIXNVwP45NBczU0J7ghckd9PvIOpCVRE4f+gDd/+G7KNVrdsp5m4bgFMc+6MDVmj0omZoaMJmhd0ChnBeJeExjLSHLBzLMffTO1WspnXL7uvh8dGy+DeACUIAl68/go1peyDYzbDlEt4ismzoZ58KeVD6dwTsigT/paiZ2z2oMkA4zB9WLejmwp3Q1SaFNg91xZJl2px5Z+E0vZhpm80f5ieTAnc3YJ0clSEXi3YtYoDuO6WLdkH0DySePyL2fysnygU5tDJ1hNj70ooqkxurU72duILbMKpxoQvdRNdyGb9b4EOBK0GHTPe6T554Ax7hm4W/V2TAnhCV5mo2w2BsoDNAoVjMLKESg4+BjKM4lqUqHk+rCNG4BLbyj+2zrWzVCRxr3MtOTMnBptSloHiMGLVRslRq7ubNZQise4urkQrtoiuRvZ7LIhuSvGVNvirCROvbTosIFlrxswdYcozoUsRQHfx/EO1v/2JPyBLWAUS6GrQgpTU/Gr6GRdePB16BuiaA7W9lqbT23dz38zLtwrP9aLMO3vEirF64NBOkQw8/4kSYjk="
         - secure: "sdNEX3d8mjRyCOkfddManAoRUR5KzPqQ8QSIPN79azFJU9BTpRSKzVbN6Ctt5YhOgqlx4MCbunt2iMWem/u1jv3xhCRNx4OpVeDfjFvJmcT6baK7Bgtvbwnzy5vDYu0XUpE0DItEuZffZVhL9kHEofzjwSlc4hoO+6yUEebEbM0g3Vi1YlRzAFacw1PZ79FprYUPj8dv3SLfAdL5QKP2id8Rl0csel6lPLCBeM25Tk+FuKcHicT1EtexDeeMz4mPhI/SHyP6sf/zEbspL33X5xLyRNNoVfHwNgtDR5uU72So9CxZ1zDKGv8XVE78Cm/x9pmxzhab33SLG2Uq5muS0+D8lwAk+4LxX8Pfkjs4zBXM6wLSkiX9aFLbNbeQ87WokTHGdWfQ6cy9L6FQ7AUTe6XK2uTgSaSfK3GdBQuYJBmJo4MjRELkVGXu5qOjsgcb4drKYP0svlt/h4fNsGqfcb98GLUE9A0oL/X0TjdDXwamPB8nvTFLMakqM1cpFH+FlaJS1CToaRMmqTgb+XYy9RZP8r6Bag5+BnevUMANPyl8hNZY13jBktS9TRdoyrX91nxXVvyJLcxsW9deAK8CIaFK9gBi9UMkd66EExEwQsYbWYd553QjuqWOCsr8IbTXYYe4NvgrE8aELl/b/HEPwcbW1/4jOKXKRdNwklSiMEc="
         - COMMIT=${TRAVIS_COMMIT::7}
@@ -22,7 +22,7 @@
     after_success:
       - docker login -u $DOCKER_USER -p $DOCKER_PASS
       - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo "$TRAVIS_BRANCH"; fi`
-      - export IMAGE_NAME=vova13347/heroku-shop-app
+      - export IMAGE_NAME=vova13347/lebedev-shop
       - docker build -t $IMAGE_NAME:latest .
       - docker tag $IMAGE_NAME:latest $IMAGE_NAME:$TAG
       - docker push $IMAGE_NAME:$TAG
@@ -30,4 +30,4 @@
     deploy:
       provider: heroku
       api_key: $HEROKU_API_KEY
-      app: heroku-shop-app
+      app: lebedev-shop
