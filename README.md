@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/vovan13347/lab.svg?branch=main)](https://travis-ci.com/vovan13347/lab)
+
 # *Технологии разработки программного обеспечения*
 ## *Лабораторная работа № 1: создание микросервиса на Spring Boot с базой данных*
 ### *Лебедев Владимир Владимирович ЗМАС2031*
@@ -17,12 +19,7 @@
 `mvn clean package spring-boot:repackage`
 
 4.В терминале Docker строим контейнер с нашим приложением  и запускаем  следующей командой:
-`docker-compose up --build`, а чтобы остановить  используете команду `docker-compose down`
-
-
-  
-[![Build Status](https://travis-ci.com/vovan13347/lab.svg?branch=main)](https://travis-ci.com/vovan13347/lab)
-  
+`docker-compose up --build`, а чтобы остановить  используете команду `docker-compose down`  
   
   ---
 ### *Примеры CURL запросов:*
