@@ -31,3 +31,5 @@
       provider: heroku
       api_key: $HEROKU_API_KEY
       app: lebedev-shop
+      on:
+        branch: main
