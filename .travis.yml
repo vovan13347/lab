@@ -16,7 +16,8 @@
       - psql -c "CREATE USER root WITH PASSWORD 'root';" -U postgres
 
     script:
-      - myshop/mvnw clean install -B
+      - cd myshop
+      - ./mvnw clean install -B
 
     after_success:
       - docker login -u $DOCKER_USER -p $DOCKER_PASS
