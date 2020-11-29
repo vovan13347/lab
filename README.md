@@ -58,4 +58,6 @@
 
 <https://lebedev-shop.herokuapp.com>
 
+### *Ссылка на Travis CI badge:*
 
+<https://travis-ci.com/github/vovan13347/lab>
