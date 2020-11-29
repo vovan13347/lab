@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>orders</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+<div th:switch="${orders}">
+    <h2 th:case="null">No orders found!</h2>
+    <div th:case="*">
+        <h2>orders</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>User first name</th>
+                <th>User last name</th>
+                <th>Goods</th>
+                <th>Quantity</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="order : ${orders}">
+                <td th:text="${order.id}"></td>
+                <td th:text="${order.user.firstName}"></td>
+                <td th:text="${order.user.lastName}"></td>
+                <td th:text="${order.goods.name}"></td>
+                <td th:text="${order.quantity}"></td>
+                <td th:text="${order.date}"></td>
+                <td><a th:href="@{order-update/{id}(id=${order.id})}">Edit</a></td>
+                <td><a th:href="@{order-delete/{id}(id=${order.id})}">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><a href="/order-create">Create order</a></p>
+    <p><a href="/">Return</a></p>
+</div>
+</body>
+</html>
