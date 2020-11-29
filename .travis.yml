@@ -16,6 +16,7 @@
       - psql -c "CREATE USER root WITH PASSWORD 'root';" -U postgres
 
     script:
+      - cd myshop
       - ./mvnw clean install -B
 
     after_success:
