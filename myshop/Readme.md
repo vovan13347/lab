@@ -48,17 +48,3 @@
 В ответ будет получен JSON в виде {hostname: "hostname"}.
 
 
-
----
-## *Лабораторная работа №3: CI/CD и деплой приложения в Heroku*
-### *Цель лабораторной работы:*
-Знакомство с CI/CD и его реализацией на примере Travis CI и Heroku.
-
----
-### *Ссылка на развернутое приложение на платформе Heroku:*
-
-<https://lebedev-shop.herokuapp.com>
-
-### *Ссылка на Travis CI badge:*
-
-<https://travis-ci.com/github/vovan13347/lab>
