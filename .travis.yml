@@ -1,5 +1,5 @@
     dist: trusty
-    jdk: oraclejdk8
+    jdk: oraclejdk11
     language: java
     services:
       - postgresql
@@ -10,6 +10,11 @@
         - secure: "UOWkgWofsgXMgvPHapwjtXoyZEH/lhv9TVB9q8uLH6sgkle6IUwGi6So/v1M+QmRwOlSBHpr5jB57kUw3xfZ+zgYjcfaNtqZS93KY8PlT2YJ6SLaHO8tuUFWzIXNVwP45NBczU0J7ghckd9PvIOpCVRE4f+gDd/+G7KNVrdsp5m4bgFMc+6MDVmj0omZoaMJmhd0ChnBeJeExjLSHLBzLMffTO1WspnXL7uvh8dGy+DeACUIAl68/go1peyDYzbDlEt4ismzoZ58KeVD6dwTsigT/paiZ2z2oMkA4zB9WLejmwp3Q1SaFNg91xZJl2px5Z+E0vZhpm80f5ieTAnc3YJ0clSEXi3YtYoDuO6WLdkH0DySePyL2fysnygU5tDJ1hNj70ooqkxurU72duILbMKpxoQvdRNdyGb9b4EOBK0GHTPe6T554Ax7hm4W/V2TAnhCV5mo2w2BsoDNAoVjMLKESg4+BjKM4lqUqHk+rCNG4BLbyj+2zrWzVCRxr3MtOTMnBptSloHiMGLVRslRq7ubNZQise4urkQrtoiuRvZ7LIhuSvGVNvirCROvbTosIFlrxswdYcozoUsRQHfx/EO1v/2JPyBLWAUS6GrQgpTU/Gr6GRdePB16BuiaA7W9lqbT23dz38zLtwrP9aLMO3vEirF64NBOkQw8/4kSYjk="
         - secure: "sdNEX3d8mjRyCOkfddManAoRUR5KzPqQ8QSIPN79azFJU9BTpRSKzVbN6Ctt5YhOgqlx4MCbunt2iMWem/u1jv3xhCRNx4OpVeDfjFvJmcT6baK7Bgtvbwnzy5vDYu0XUpE0DItEuZffZVhL9kHEofzjwSlc4hoO+6yUEebEbM0g3Vi1YlRzAFacw1PZ79FprYUPj8dv3SLfAdL5QKP2id8Rl0csel6lPLCBeM25Tk+FuKcHicT1EtexDeeMz4mPhI/SHyP6sf/zEbspL33X5xLyRNNoVfHwNgtDR5uU72So9CxZ1zDKGv8XVE78Cm/x9pmxzhab33SLG2Uq5muS0+D8lwAk+4LxX8Pfkjs4zBXM6wLSkiX9aFLbNbeQ87WokTHGdWfQ6cy9L6FQ7AUTe6XK2uTgSaSfK3GdBQuYJBmJo4MjRELkVGXu5qOjsgcb4drKYP0svlt/h4fNsGqfcb98GLUE9A0oL/X0TjdDXwamPB8nvTFLMakqM1cpFH+FlaJS1CToaRMmqTgb+XYy9RZP8r6Bag5+BnevUMANPyl8hNZY13jBktS9TRdoyrX91nxXVvyJLcxsW9deAK8CIaFK9gBi9UMkd66EExEwQsYbWYd553QjuqWOCsr8IbTXYYe4NvgrE8aELl/b/HEPwcbW1/4jOKXKRdNwklSiMEc="
         - COMMIT=${TRAVIS_COMMIT::7}
+    addons:
+      sonarcloud:
+        organization: "vovan13347"
+        token:
+          secure: "LAH5kibD8pQL16oRt5fM+tQamy6/DUQaDBflHSlMdrIDDMRp6fS5MdS0KAhBjqJlukrly8fmfXRAO8IbiPCCHoIKDCeslPJXCZqt5l6oyQeYEl+5tWrVVne4cE+uuUEDWKOhExTaRn6jroRod55agWdE50OfhbV23UYCsdXsI/LSVVDpUE4AVux7aOsPOCoBEcvf9xqWu2EzMp0/kemvKeQotc8TxAPHPkekdDFvhWztDqr6cz2ecX9u4XEdlWLATdLZsO0WEqQEra4HWJEC8A7ufgLa09gDOFdMRqd27YrX4FjPQWrglg2OOBxG0D1Lz1abM5aVtH4uoKFPAut0/FLLwx5TcyGpLQXDV8AqxXM5s/2JbIR67Bf19pi9Uq44lMB2JGa68h6LAg840C1JLUNcFuAauKIQCc8yf8Kjibqc8GOOcjXhbJ4QS1Qi2XRJt4f9w8Fd5UNsKJ2SQgUYFy2nk26n9z3uXeapv4S5SsjwRIf2PMDkU/0oZMOc2F8vYPp9g5HOubqLZ1l/MRTC3TYpsG1PJSUzzVosobigRnTIUz6WT291bV+X8co+StBD3oK97k426OE/i/dGCsUJJ8PtXRNZVVs+AbWfx0Z5IZ7EuOImMPALhGSQF4avc2UQ0yzVs986PAD1btOpK6D9GNxd69zvqLMQe4hqTcWOijY="
 
     before_script:
       - psql -c "CREATE DATABASE myshopdb;" -U postgres
@@ -17,7 +22,7 @@
 
     script:
       - cd myshop
-      - ./mvnw clean install -B
+      - ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=vovan13347_lab
 
     after_success:
       - docker login -u $DOCKER_USER -p $DOCKER_PASS
